@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="vrh">
 
 <div class="topbar">
   <div class="container">
@@ -38,7 +38,7 @@
     <nav class="nav" id="nav" aria-label="Glavna navigacija">
         <a class="nav__link" href="index.html">Početna</a>
         <a class="nav__link is-active" aria-current="page" href="o-nama.html">O nama</a>
-        <a class="nav__link" href="polaganje.html">Polaganje</a>
+        <a class="nav__link" href="index.html#polaganje">Polaganje</a>
         <div class="dropdown">
           <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Testovi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
           <div class="dropdown__menu">
@@ -47,20 +47,19 @@
             <a href="https://www.youtube.com/watch?v=YM4e-BxPa2U" target="_blank" rel="noopener"><span class="dropdown__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor" stroke="none"/></svg></span><span><strong>Polaganje praktičnog ispita</strong><small>Video: vožnja poligona</small></span></a>
           </div>
         </div>
-        <a class="nav__link" href="cenovnik.html">Cenovnik</a>
-        <a class="nav__link" href="galerija.html">Galerija</a>
-        <a class="nav__link" href="kontakt.html">Kontakt</a>
-        <a class="btn btn--primary nav__mobile-cta" href="kontakt.html">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="nav__link" href="index.html#cenovnik">Cenovnik</a>
+        <a class="nav__link" href="index.html#galerija">Galerija</a>
+        <a class="nav__link" href="index.html#kontakt">Kontakt</a>
+        <a class="btn btn--primary nav__mobile-cta" href="index.html#kontakt">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
     <div class="header__cta">
-      <a class="btn btn--primary" href="kontakt.html">Upiši se <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--primary" href="index.html#kontakt">Upiši se <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <button class="burger" type="button" aria-label="Meni" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main>
-
 
 <section class="page-hero">
   <img src="assets/img/aboutus.jpg" alt="" aria-hidden="true">
@@ -71,7 +70,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section pat pat--grid">
   <div class="container split">
     <div class="split__media reveal">
       <img src="assets/img/galerija3.jpg" alt="Učionica za teorijsku nastavu sa računarima" loading="lazy">
@@ -86,7 +85,7 @@
   </div>
 </section>
 
-<section class="section section--soft">
+<section class="section pat pat--lines">
   <div class="container split split--rev">
     <div class="split__media reveal">
       <img src="assets/img/a-klasa1.jpg" alt="Školsko vozilo Mercedes A klase" loading="lazy">
@@ -100,7 +99,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section pat pat--dots">
   <div class="container split">
     <div class="split__media reveal">
       <img src="assets/img/slider1.jpg" alt="Instruktor daje uputstva kandidatu" loading="lazy">
@@ -115,7 +114,7 @@
   </div>
 </section>
 
-<section class="section section--soft">
+<section class="section pat pat--checker">
   <div class="container">
     <div class="section-head section-head--center reveal">
       <span class="eyebrow">Pogodnosti</span>
@@ -136,20 +135,20 @@
     </div>
   </div>
 </section>
-<div style="height:clamp(72px,10vw,120px)"></div>
 
-<section class="section" style="padding-top:0">
+<section class="section section--tight pat pat--lines">
   <div class="container">
-    <div class="cta reveal">
-      <div>
-        <h2>Budite spremni za START!</h2>
-        <p>Pozovite nas ili pošaljite prijavu i zakažite svoje termine već danas. Sloboda je na dohvat ruke.</p>
+
+      <div class="cta reveal">
+        <div>
+          <h2>Budite spremni za START!</h2>
+          <p>Pozovite nas ili pošaljite prijavu i zakažite svoje termine već danas.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--white btn--lg" href="index.html#kontakt">Popuni formular <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> 066 68 00 600</a>
+        </div>
       </div>
-      <div class="cta__actions">
-        <a class="btn btn--white btn--lg" href="kontakt.html">Popuni formular <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> 066 68 00 600</a>
-      </div>
-    </div>
   </div>
 </section>
 </main>
@@ -171,10 +170,10 @@
         <ul class="footer__links">
           <li><a href="index.html">Početna</a></li>
           <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="polaganje.html">Polaganje</a></li>
-          <li><a href="cenovnik.html">Cenovnik</a></li>
-          <li><a href="galerija.html">Galerija</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html#polaganje">Polaganje</a></li>
+          <li><a href="index.html#cenovnik">Cenovnik</a></li>
+          <li><a href="index.html#galerija">Galerija</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
         </ul>
       </div>
       <div>
@@ -199,7 +198,7 @@
 
 <div class="callbar">
   <a class="btn btn--outline" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> Pozovi</a>
-  <a class="btn btn--primary" href="kontakt.html">Upiši se</a>
+  <a class="btn btn--primary" href="index.html#kontakt">Upiši se</a>
 </div>
 
 <script src="assets/js/main.js"></script>

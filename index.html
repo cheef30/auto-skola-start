@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="vrh">
 
 <div class="topbar">
   <div class="container">
@@ -36,9 +36,9 @@
       <img src="assets/img/logo.jpg" alt="Auto škola START" width="149" height="46">
     </a>
     <nav class="nav" id="nav" aria-label="Glavna navigacija">
-        <a class="nav__link is-active" aria-current="page" href="index.html">Početna</a>
+        <a class="nav__link is-active" aria-current="page" href="#vrh">Početna</a>
         <a class="nav__link" href="o-nama.html">O nama</a>
-        <a class="nav__link" href="polaganje.html">Polaganje</a>
+        <a class="nav__link" href="#polaganje">Polaganje</a>
         <div class="dropdown">
           <button class="nav__link" type="button" aria-expanded="false" aria-haspopup="true">Testovi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
           <div class="dropdown__menu">
@@ -47,13 +47,13 @@
             <a href="https://www.youtube.com/watch?v=YM4e-BxPa2U" target="_blank" rel="noopener"><span class="dropdown__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor" stroke="none"/></svg></span><span><strong>Polaganje praktičnog ispita</strong><small>Video: vožnja poligona</small></span></a>
           </div>
         </div>
-        <a class="nav__link" href="cenovnik.html">Cenovnik</a>
-        <a class="nav__link" href="galerija.html">Galerija</a>
-        <a class="nav__link" href="kontakt.html">Kontakt</a>
-        <a class="btn btn--primary nav__mobile-cta" href="kontakt.html">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="nav__link" href="#cenovnik">Cenovnik</a>
+        <a class="nav__link" href="#galerija">Galerija</a>
+        <a class="nav__link" href="#kontakt">Kontakt</a>
+        <a class="btn btn--primary nav__mobile-cta" href="#kontakt">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
     <div class="header__cta">
-      <a class="btn btn--primary" href="kontakt.html">Upiši se <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--primary" href="#kontakt">Upiši se <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <button class="burger" type="button" aria-label="Meni" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -70,16 +70,22 @@
       <img src="assets/img/slider2-1.jpg" alt="Kandidati na teorijskoj nastavi" loading="lazy">
     </div>
   </div>
+  <div class="hero__fx" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
   <div class="container">
     <div class="hero__content">
       <div class="hero__badge"><b>od 1992.</b> Više od 10.000 obučenih kandidata</div>
-      <div class="hero__caption">
-        <h1 class="hero__caption-text" data-hero-title>Auto škola <span class="accent">START</span></h1>
-      </div>
+      <h1 class="hero__caption-text" data-hero-title>Auto škola <span class="accent">START</span></h1>
+      <div class="hero__sep" aria-hidden="true"></div>
       <p class="hero__lead hero__caption-text" data-hero-lead>Uz naš profesionalni tim naučite da vozite bezbedno, odgovorno i bez straha.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary btn--lg" href="kontakt.html">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="cenovnik.html">Pogledaj cenovnik</a>
+        <a class="btn btn--primary btn--lg" href="#kontakt">Upiši se online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#cenovnik">Pogledaj cenovnik</a>
+      </div>
+      <div class="hero__meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg> 30+ godina iskustva</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/><circle cx="7.5" cy="13" r="1"/><circle cx="16.5" cy="13" r="1"/></svg> A · B · C · CE kategorija</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Termini po vašoj meri</span>
       </div>
     </div>
   </div>
@@ -102,7 +108,23 @@
   </div>
 </div>
 
-<section class="section">
+<section class="section section--tight section--tight-b pat pat--lines">
+  <div class="container">
+
+      <div class="cta reveal cta--top">
+        <div>
+          <h2>Započni obuku već danas!</h2>
+          <p>Nema razloga za odlaganje — upiši se, izaberi termine i kreni ka vozačkoj dozvoli.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--white btn--lg" href="#kontakt">Popuni formular <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> 066 68 00 600</a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section pat pat--grid">
   <div class="container split">
     <div class="split__media reveal">
       <img src="assets/img/aboutus.jpg" alt="Srećna kandidatkinja sa ključevima nakon položenog ispita" loading="lazy">
@@ -112,7 +134,6 @@
       <span class="eyebrow">O nama</span>
       <h2>Škola koja vas vodi od prvog časa do dozvole</h2>
       <p>Auto škola START radi od 1992. godine i posluje u više gradova. Iza nas su decenije rada, posvećenost svakom kandidatu i visok nivo profesionalnosti.</p>
-      <p>Obuku stalno unapređujemo — kako bi učenje bilo jednostavnije, a put do vozačke dozvole što lakši.</p>
       <ul class="checklist">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> Iskusni i strpljivi instruktori</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> Vozila poslednje generacije</li>
@@ -123,7 +144,7 @@
   </div>
 </section>
 
-<section class="section section--soft">
+<section class="section pat pat--checker">
   <div class="container">
     <div class="section-head section-head--center reveal">
       <span class="eyebrow">Zašto START</span>
@@ -139,7 +160,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section--tight pat pat--dots">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Kategorije</span>
@@ -147,43 +168,34 @@
       <p>Od motocikla do kamiona sa prikolicom — izaberite kategoriju i krenite.</p>
     </div>
     <div class="cats">
-      <a class="cat reveal" href="kontakt.html"><div class="cat__letter">A</div><h3>Motocikli</h3><p>Obuka za vožnju motocikala.</p></a>
-      <a class="cat cat--featured reveal reveal-d1" href="cenovnik.html"><span class="cat__pill">Najtraženije</span><div class="cat__letter">B</div><h3>Putnička vozila</h3><p>Kompletna obuka — 72.000 rsd.</p></a>
-      <a class="cat reveal reveal-d2" href="kontakt.html"><div class="cat__letter">C</div><h3>Teretna vozila</h3><p>Obuka za kamione.</p></a>
-      <a class="cat reveal reveal-d3" href="kontakt.html"><div class="cat__letter">CE</div><h3>Kamion + prikolica</h3><p>Teretna vozila sa priključnim vozilom.</p></a>
+      <a class="cat reveal" href="#kontakt"><div class="cat__letter">A</div><h3>Motocikli</h3><p>Obuka za vožnju motocikala.</p></a>
+      <a class="cat cat--featured reveal reveal-d1" href="#cenovnik"><span class="cat__pill">Najtraženije</span><div class="cat__letter">B</div><h3>Putnička vozila</h3><p>Kompletna obuka — 72.000 rsd.</p></a>
+      <a class="cat reveal reveal-d2" href="#kontakt"><div class="cat__letter">C</div><h3>Teretna vozila</h3><p>Obuka za kamione.</p></a>
+      <a class="cat reveal reveal-d3" href="#kontakt"><div class="cat__letter">CE</div><h3>Kamion + prikolica</h3><p>Teretna vozila sa priključnim vozilom.</p></a>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="section pat pat--grid" id="polaganje">
   <div class="container">
-    <div class="voucher reveal">
-      <div class="voucher__amount">50 €</div>
-      <div class="voucher__body">
-        <h3>Vaučer od 50 € — samo za upis preko sajta</h3>
-        <p>Pošaljite online prijavu i popust vam je odmah obezbeđen.</p>
-      </div>
-      <a class="btn btn--primary" href="kontakt.html?vaucer">Upiši se odmah <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Polaganje</span>
+      <h2>Tok obuke i polaganja</h2>
+      <p>Sedam koraka do vozačke dozvole — uz instruktore koji su uz vas na svakom.</p>
+    </div>
+    <div class="timeline">
+      <div class="step reveal"><div class="step__num">1</div><div class="step__body"><h3>Upis i prijava</h3><p>Prvi korak je upis u auto školu. Odmah dobijate sve informacije o toku obuke, rasporedu časova i cenama.</p></div></div>
+      <div class="step reveal"><div class="step__num">2</div><div class="step__body"><h3>Teorijska obuka</h3><p>Učite saobraćajna pravila, znakove, pravo prvenstva prolaza i osnove upravljanja vozilom — uz pripremu za teorijski ispit.</p></div></div>
+      <div class="step reveal"><div class="step__num">3</div><div class="step__body"><h3>Teorijski ispit</h3><p>Po završetku teorije polažete test znanja o saobraćajnim propisima. Kada ga položite, prelazite na vožnju.</p></div></div>
+      <div class="step reveal"><div class="step__num">4</div><div class="step__body"><h3>Praktična obuka</h3><p>Počinje obuka vožnje: parkiranje, vožnja u različitim uslovima i sve veštine koje su vozaču potrebne.</p></div></div>
+      <div class="step reveal"><div class="step__num">5</div><div class="step__body"><h3>Praktični časovi</h3><p>Kroz niz časova, pod nadzorom instruktora, učite da prepoznate opasnosti, pravilno reagujete i bezbedno upravljate vozilom.</p></div></div>
+      <div class="step reveal"><div class="step__num">6</div><div class="step__body"><h3>Polaganje vožnje</h3><p>Kada instruktor proceni da ste spremni, izlazite na praktični ispit i pokazujete sve što ste naučili.</p></div></div>
+      <div class="step reveal"><div class="step__num">7</div><div class="step__body"><h3>Vozačka dozvola</h3><p>Posle uspešno položenog ispita dobijate vozačku dozvolu i postajete ovlašćeni vozač. Čestitamo!</p></div></div>
     </div>
   </div>
 </section>
 
-<section class="section stats">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Rezultati</span>
-      <h2>Brojevi na koje smo ponosni</h2>
-      <p>Statistika koja govori više od reči.</p>
-    </div>
-    <div class="stats__grid">
-      <div class="stat reveal"><div class="stat__value"><span data-count="87">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>kandidata upisalo je našu školu na nečiju preporuku</p></div>
-      <div class="stat reveal reveal-d1"><div class="stat__value"><span data-count="89">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>prolaznost na teorijskom ispitu</p></div>
-      <div class="stat reveal reveal-d2"><div class="stat__value"><span data-count="80">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>kandidata položi vožnju iz prvog pokušaja</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
+<section class="section section--tight pat pat--lines">
   <div class="container split split--rev">
     <div class="split__media reveal">
       <div class="video">
@@ -202,23 +214,159 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> Redosled radnji na poligonu</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> Najčešće greške i kako ih izbeći</li>
       </ul>
-      <a class="btn btn--outline" href="polaganje.html">Kako teče polaganje <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--outline" href="assets/docs/testovi-vezbanje.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg> Testovi za vežbanje (PDF)</a>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="section pat pat--dots" id="cenovnik">
   <div class="container">
-    <div class="cta reveal">
-      <div>
-        <h2>Započni obuku već danas!</h2>
-        <p>Nema razloga za odlaganje — upiši se, izaberi termine i kreni ka vozačkoj dozvoli.</p>
+    <div class="section-head reveal">
+      <span class="eyebrow">Cenovnik</span>
+      <h2>Cene bez skrivenih troškova</h2>
+      <p>Sve što plaćate — na jednom mestu.</p>
+    </div>
+    <div class="pricing">
+      <div class="price-card reveal">
+        <div class="price-card__head">
+          <div class="price-card__cat"><b>B</b><span>Kategorija B · putnička vozila</span></div>
+          <div class="price-card__total">72.000<small>rsd</small></div>
+          <p>Cena kompletne obuke za B kategoriju</p>
+        </div>
+        <div class="price-card__body">
+          <div class="price-row"><div class="price-row__label">Teorijska obuka<small>40 časova × 400 rsd</small></div><div class="price-row__value">16.000 rsd</div></div>
+          <div class="price-row"><div class="price-row__label">Praktična obuka<small>40 časova × 1.200 rsd</small></div><div class="price-row__value">48.000 rsd</div></div>
+          <div class="price-row"><div class="price-row__label">Teorijski ispit<small>izlazak na ispit</small></div><div class="price-row__value">4.000 rsd</div></div>
+          <div class="price-row price-row--promo"><div class="price-row__label">Prvi praktični ispit <span class="badge">Akcija</span><small>svaki naredni izlazak 4.000 rsd</small></div><div class="price-row__value"><s>4.000</s>1.000 rsd</div></div>
+          <a class="btn btn--primary btn--lg" style="width:100%;margin-top:16px" href="#kontakt">Upiši se i uštedi 50 € <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
       </div>
-      <div class="cta__actions">
-        <a class="btn btn--white btn--lg" href="kontakt.html">Popuni formular <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> 066 68 00 600</a>
+      <div class="price-side">
+        <div class="price-note price-note--blue reveal reveal-d1">
+          <h3>Vaučer od 50 €</h3>
+          <p>Za svaki upis preko sajta dobijate popust od 50 €. Samo popunite online prijavu.</p>
+        </div>
+        <div class="price-note reveal reveal-d1">
+          <h3>Totalna posvećenost kandidatu</h3>
+          <p>Tempo i termini obuke prilagođavaju se vama i vašim obavezama.</p>
+        </div>
+        <div class="price-note reveal reveal-d2">
+          <h3>Materijal za učenje uključen</h3>
+          <p>Dobijate skripte i knjige za teorijski ispit, a na školskim računarima možete da vežbate testove.</p>
+        </div>
+        <div class="price-note reveal reveal-d3">
+          <h3>A, C i CE kategorija</h3>
+          <p>Za cene ostalih kategorija pozovite nas na <a href="tel:+381666800600">066 68 00 600</a> ili nam pišite.</p>
+        </div>
       </div>
     </div>
+    <div class="voucher reveal" style="margin-top:20px">
+      <div class="voucher__amount">50 €</div>
+      <div class="voucher__body">
+        <h3>Vaučer od 50 € — samo za upis preko sajta</h3>
+        <p>Pošaljite online prijavu i popust vam je odmah obezbeđen.</p>
+      </div>
+      <a class="btn btn--primary" href="#kontakt">Upiši se odmah <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section pat pat--dark stats">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Rezultati</span>
+      <h2>Brojevi na koje smo ponosni</h2>
+      <p>Statistika koja govori više od reči.</p>
+    </div>
+    <div class="stats__grid">
+      <div class="stat reveal"><div class="stat__value"><span data-count="87">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>kandidata upisalo je našu školu na nečiju preporuku</p></div>
+      <div class="stat reveal reveal-d1"><div class="stat__value"><span data-count="89">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>prolaznost na teorijskom ispitu</p></div>
+      <div class="stat reveal reveal-d2"><div class="stat__value"><span data-count="80">0</span><sup>%</sup></div><div class="stat__bar"><i></i></div><p>kandidata položi vožnju iz prvog pokušaja</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pat pat--checker" id="galerija">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Galerija</span>
+      <h2>Naša vozila i prostor</h2>
+      <p>Pogledajte gde i u čemu se odvija obuka.</p>
+    </div>
+    <div class="gallery">
+      <button class="gallery__item gallery__item--wide reveal" type="button" aria-label="Uvećaj: Školsko vozilo — Mercedes A klasa"><img src="assets/img/a-klasa3.jpg" alt="Školsko vozilo — Mercedes A klasa" loading="lazy"><span class="gallery__cap">Naša vozila</span></button>
+      <button class="gallery__item reveal" type="button" aria-label="Uvećaj: Učionica za teorijsku nastavu"><img src="assets/img/galerija3.jpg" alt="Učionica za teorijsku nastavu" loading="lazy"><span class="gallery__cap">Učionica</span></button>
+      <button class="gallery__item reveal" type="button" aria-label="Uvećaj: Mercedes A klasa spreda"><img src="assets/img/a-klasa1.jpg" alt="Mercedes A klasa spreda" loading="lazy"><span class="gallery__cap">Vozni park</span></button>
+      <button class="gallery__item gallery__item--wide reveal" type="button" aria-label="Uvećaj: Kandidatkinja sa ključevima"><img src="assets/img/aboutus.jpg" alt="Kandidatkinja sa ključevima" loading="lazy"><span class="gallery__cap">Položeno!</span></button>
+    </div>
+    <p style="text-align:center;margin:28px 0 0;color:var(--muted)" class="reveal">Još fotografija i snimaka sa obuke pratite na našem <a href="https://instagram.com/auto_start_obrenovac" target="_blank" rel="noopener">Instagram profilu</a>.</p>
+  </div>
+</section>
+
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Pregled fotografije">
+  <button class="lightbox__btn lightbox__close" type="button" aria-label="Zatvori"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" type="button" aria-label="Prethodna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+  <img src="" alt="">
+  <button class="lightbox__btn lightbox__next" type="button" aria-label="Sledeća"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+</div>
+
+<section class="section pat pat--grid" id="kontakt">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Upiši se ili nas pitaj šta te zanima</h2>
+      <p>Javljamo se u najkraćem roku — telefonom ili mejlom.</p>
+    </div>
+    <div class="contact">
+      <div>
+        <div class="contact-list">
+          <a class="contact-item reveal" href="tel:+381666800600"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Nikola</small><strong>066 68 00 600</strong></span></a>
+          <a class="contact-item reveal" href="tel:+381666800700"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Bojana</small><strong>066 68 00 700</strong></span></a>
+          <a class="contact-item reveal" href="tel:+381116308965"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Fiksni telefon</small><strong>011 630 89 65</strong></span></a>
+          <a class="contact-item reveal" href="mailto:info@startautoskola.rs"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><strong>info@startautoskola.rs</strong></span></a>
+          <a class="contact-item reveal" href="mailto:autostartub@gmail.com"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><strong>autostartub@gmail.com</strong></span></a>
+          <a class="contact-item reveal" href="https://instagram.com/auto_start_obrenovac" target="_blank" rel="noopener"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><small>Instagram</small><strong>auto_start_obrenovac</strong></span></a>
+          <div class="contact-item reveal"><span class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><small>Adresa</small><strong>Vuka Karadžića 2, Obrenovac</strong></span></div>
+        </div>
+      </div>
+
+      <form class="form reveal reveal-d1" data-signup novalidate>
+        <span class="eyebrow">Online prijava</span>
+        <h2>Upiši se preko sajta</h2>
+        <p>Uz online prijavu dobijate <strong>vaučer od 50 €</strong>.</p>
+        <div class="form__grid">
+          <div class="field"><label for="ime">Ime i prezime</label><input id="ime" name="ime" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="telefon">Broj telefona</label><input id="telefon" name="telefon" type="tel" autocomplete="tel" required></div>
+          <div class="field field--full"><label for="email">Email adresa</label><input id="email" name="email" type="email" autocomplete="email"></div>
+          <fieldset class="field field--full" style="border:0;padding:0;margin:0">
+            <legend style="font-weight:600;color:var(--ink);font-size:.92rem;margin-bottom:7px">Kategorija</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="kategorija" value="A"><span>A</span></label>
+              <label class="chip"><input type="radio" name="kategorija" value="B" checked><span>B</span></label>
+              <label class="chip"><input type="radio" name="kategorija" value="C"><span>C</span></label>
+              <label class="chip"><input type="radio" name="kategorija" value="CE"><span>CE</span></label>
+            </div>
+          </fieldset>
+          <div class="field field--full"><label for="poruka">Dodatna poruka</label><textarea id="poruka" name="poruka" placeholder="npr. Zainteresovan/a sam za kategoriju A"></textarea></div>
+        </div>
+        <div class="form__foot">
+          <small>Odgovaramo u najkraćem roku.</small>
+          <button class="btn btn--primary btn--lg" type="submit">Pošalji prijavu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="form__ok" role="status">Otvoren je vaš email program sa popunjenom prijavom — samo kliknite „Pošalji”.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight pat pat--lines">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Lokacija</span>
+      <h2>Gde se nalazimo</h2>
+      <p>Vuka Karadžića 2, Obrenovac — u samom centru, lako do nas.</p>
+    </div>
+    <div class="map reveal"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.2144148636576!2d20.191251015401367!3d44.65397077909961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a145d82dae23b%3A0x60c7958847177232!2sVuka%20Karad%C5%BEi%C4%87a%202%2C%20Obrenovac!5e0!3m2!1sen!2srs!4v1605528538139!5m2!1sen!2srs" title="Mapa — Vuka Karadžića 2, Obrenovac" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
   </div>
 </section>
 </main>
@@ -240,10 +388,10 @@
         <ul class="footer__links">
           <li><a href="index.html">Početna</a></li>
           <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="polaganje.html">Polaganje</a></li>
-          <li><a href="cenovnik.html">Cenovnik</a></li>
-          <li><a href="galerija.html">Galerija</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html#polaganje">Polaganje</a></li>
+          <li><a href="index.html#cenovnik">Cenovnik</a></li>
+          <li><a href="index.html#galerija">Galerija</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
         </ul>
       </div>
       <div>
@@ -268,7 +416,7 @@
 
 <div class="callbar">
   <a class="btn btn--outline" href="tel:+381666800600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> Pozovi</a>
-  <a class="btn btn--primary" href="kontakt.html">Upiši se</a>
+  <a class="btn btn--primary" href="#kontakt">Upiši se</a>
 </div>
 
 <aside class="popup" aria-label="Vaučer za upis">
@@ -279,7 +427,7 @@
   </div>
   <div class="popup__body">
     <p>Prijavi se online i odmah ostvari popust od 50 € na obuku.</p>
-    <a class="btn btn--primary" href="kontakt.html?vaucer">Iskoristi vaučer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn--primary" href="#kontakt">Iskoristi vaučer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </aside>
 <script src="assets/js/main.js"></script>
